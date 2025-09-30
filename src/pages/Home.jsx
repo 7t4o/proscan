@@ -3,25 +3,24 @@ import { IoIosMenu } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
 import { CiUser } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
-import Logo from '/Logo/Logo-White.svg'
-import Hero from '/Home/Hero.jpg'
 import { useState } from 'react';
 
 export default function ProScanApp() {
+  const baseUrl = import.meta.env.BASE_URL ?? '/';
   const [liked, setLiked] = useState([false, false]);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const players = [
-    { name: 'أحمد حكمي', team: 'الاتحد جدة', image: './Players/Ahmed.jpg' },
-    { name: 'أحمد حكمي', team: 'الاتحد جدة', image: './Players/Ahmed.jpg' },
-    { name: 'أحمد حكمي', team: 'قدامى (٢٠٢٤)', image: './Players/Ahmed.jpg' }
+    { name: 'أحمد حكمي', team: 'الاتحد جدة', image: `${baseUrl}Players/Ahmed.jpg` },
+    { name: 'أحمد حكمي', team: 'الاتحد جدة', image: `${baseUrl}Players/Ahmed.jpg` },
+    { name: 'أحمد حكمي', team: 'قدامى (٢٠٢٤)', image: `${baseUrl}Players/Ahmed.jpg` }
   ];
 
   const menuItems = [
-    { label: 'اللاعبين', img: './SideBar/side1.png' },
-    { label: 'الكشافين', img: './SideBar/side2.png' },
-    { label: 'المدربين', img: './SideBar/side3.png' },
-    { label: 'تواصل معنا', img: './SideBar/side4.png' },
+    { label: 'اللاعبين', img: `${baseUrl}SideBar/side1.png` },
+    { label: 'الكشافين', img: `${baseUrl}SideBar/side2.png` },
+    { label: 'المدربين', img: `${baseUrl}SideBar/side3.png` },
+    { label: 'تواصل معنا', img: `${baseUrl}SideBar/side4.png` },
   ];
 
   return (
@@ -37,7 +36,7 @@ export default function ProScanApp() {
               <CiSearch className="w-7 h-7 text-white" />
             </button>
             <div className="flex items-center gap-1.5">
-              <img src={Logo} alt="" />
+              <img src={`${baseUrl}Logo/Logo-White.svg`} alt="" />
             </div>
             <button onClick={() => setMenuOpen(!menuOpen)}>
               <IoIosMenu className="w-6 h-6 text-white" />
@@ -62,7 +61,7 @@ export default function ProScanApp() {
             <div className="bg-[#318735] px-5 py-6">
               <div className="flex items-center justify-between mb-3 flex-row-reverse">
                 <div className="flex items-center gap-2">
-                  <img src={Logo} alt="" />
+                  <img src={`${baseUrl}Logo/Logo-White.svg`} alt="" />
                 </div>
                 <button onClick={() => setMenuOpen(false)}>
                   <AiOutlineClose className="w-6 h-6 text-white" />
@@ -109,7 +108,7 @@ export default function ProScanApp() {
           {/* Hero Section */}
           <div className="relative h-44">
             <img 
-              src={Hero}
+              src={`${baseUrl}Home/Hero.jpg`}
               alt="Stadium"
               className="w-full h-full object-cover brightness-75"
             />
