@@ -37,7 +37,7 @@ function Login() {
     }, { scope: container });
 
     return (
-        <div className='relative'>
+        <div className='relative overflow-hidden'>
         <div ref={container} className='bg-[#EBFFF6] h-screen flex justify-end items-center flex-col relative overflow-hidden pb-24'>
             
             <img src="./Logo/Logo.svg" className='logo-img object-cover w-[260px] absolute top-1/2 left-1/2'/>

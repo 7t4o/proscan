@@ -4,6 +4,7 @@ import { FaHeart } from "react-icons/fa";
 import { CiUser } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 export default function ProScanApp() {
   const baseUrl = import.meta.env.BASE_URL ?? '/';
@@ -28,9 +29,8 @@ export default function ProScanApp() {
       {/* Mobile Container */}
       <div className="w-full max-w-sm bg-white flex flex-col relative overflow-hidden">
         
-        {/* Status Bar */}
+        {/* Header Navigation */}
         <div className="bg-[#318735] px-5 relative z-20">
-          {/* Header Navigation */}
           <div className="flex items-center justify-between py-2">
             <button>
               <CiSearch className="w-7 h-7 text-white" />
@@ -124,9 +124,9 @@ export default function ProScanApp() {
           <div className="bg-white pt-5 pb-8">
             {/* CTA Button */}
             <div className="px-6">
-              <button className="w-full bg-[#318735] text-white py-3.5 rounded-lg font-bold text-base mb-6 shadow-sm">
+              <Link to="/players" className="w-full inline-block bg-[#318735] text-white py-3.5 rounded-lg font-bold text-base text-center mb-6 shadow-sm">
                 استعرض اللاعبين
-              </button>
+              </Link>
 
               {/* Info Section */}
               <div className="mb-8 text-right">
