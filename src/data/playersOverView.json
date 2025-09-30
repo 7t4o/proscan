@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "أحمد حكمي",
+        "position": "قلب وسط",
+        "team": "النصر",
+        "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=200&h=200&fit=crop",
+        "rating": 81,
+        "ratingColor": "green",
+        "location": "قم بزيارتك",
+        "age": "17 سنة"
+    },
+    {
+        "id": 2,
+        "name": "محمد عريشي",
+        "position": "قلب هجوم",
+        "team": "اتحاد الجدة",
+        "image": "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=200&h=200&fit=crop",
+        "rating": 79,
+        "ratingColor": "yellow",
+        "location": "جدة",
+        "age": "22 سنة"
+    },
+    {
+        "id": 3,
+        "name": "يحيى شراحيلي",
+        "position": "قلب دفاع",
+        "team": "نادي الوفاق",
+        "image": "https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=200&h=200&fit=crop",
+        "rating": 73,
+        "ratingColor": "yellow",
+        "location": "مسن",
+        "age": "19 سنة"
+    },
+    {
+        "id": 4,
+        "name": "سامي قفيفي",
+        "position": "قلب هجوم",
+        "team": "النصر",
+        "image": "https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?w=200&h=200&fit=crop",
+        "rating": 68,
+        "ratingColor": "red",
+        "location": "جدة",
+        "age": "17 سنة"
+    },
+    {
+        "id": 5,
+        "name": "عادل زكري",
+        "position": "حارس مرمى",
+        "team": "الجزيرة",
+        "image": "https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?w=200&h=200&fit=crop",
+        "rating": 90,
+        "ratingColor": "green",
+        "location": "قيدان",
+        "age": "18 سنة"
+    },
+    {
+        "id": 6,
+        "name": "فيصل مذخلي",
+        "position": "قلب هجوم",
+        "team": "النصر",
+        "image": "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?w=200&h=200&fit=crop",
+        "rating": 95,
+        "ratingColor": "green",
+        "location": "ام بريس",
+        "age": "17 سنة"
+    }
+]
