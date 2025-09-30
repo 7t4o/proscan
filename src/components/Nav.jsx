@@ -17,7 +17,7 @@ function Nav() {
     ];
 
     return (
-        <div className="bg-[#242624] border-t border-neutral-800 fixed bottom-0 left-0 right-0 rounded-b-4xl">
+        <div className="bg-[#242624] border-t border-neutral-800 fixed bottom-0 left-0 right-0">
             <div className="flex justify-around items-center py-6 px-4">
                 {navItems.map((item) => (
                     <Link

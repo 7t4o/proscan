@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Players from "./pages/Players";
 import Notifications from "./pages/Notifications";
 import Profile from "./pages/Profile";
+import PlayerDetails from "./pages/PlayerDetails";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route element={<Layout />}>
         <Route path="/home" element={<Home />} />
         <Route path="/players" element={<Players />} />
+        <Route path="/details" element={<PlayerDetails />} />
         <Route path="/notifs" element={<Notifications />} />
         <Route path="/profile" element={<Profile />} />
       </Route>

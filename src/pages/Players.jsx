@@ -4,6 +4,7 @@ import { CiFilter } from "react-icons/ci";
 import { HiOutlineMapPin } from "react-icons/hi2";
 import { FaRegCalendar } from "react-icons/fa";
 import { IoFootballOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 import data from '../data/playersOverView.json'
 
 
@@ -82,9 +83,9 @@ export default function PlayersPage() {
             </div>
 
             {/* View Details Button */}
-            <button className="w-full bg-[#0A2C0C] hover:bg-green-950 text-white pt-2.5 pb-2 text-xs font-semibold transition-colors">
+            <Link to="/details" className="w-full bg-[#0A2C0C] hover:bg-green-950 text-white pt-2.5 pb-2 text-xs font-semibold transition-colors">
               عرض التفاصيل
-            </button>
+            </Link>
           </div>
         ))}
       </div>
