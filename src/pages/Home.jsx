@@ -12,16 +12,16 @@ export default function ProScanApp() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const players = [
-    { name: 'أحمد حكمي', team: 'الاتحد جدة', image: '/Players/Ahmed.jpg' },
-    { name: 'أحمد حكمي', team: 'الاتحد جدة', image: '/Players/Ahmed.jpg' },
-    { name: 'أحمد حكمي', team: 'قدامى (٢٠٢٤)', image: '/Players/Ahmed.jpg' }
+    { name: 'أحمد حكمي', team: 'الاتحد جدة', image: './Players/Ahmed.jpg' },
+    { name: 'أحمد حكمي', team: 'الاتحد جدة', image: './Players/Ahmed.jpg' },
+    { name: 'أحمد حكمي', team: 'قدامى (٢٠٢٤)', image: './Players/Ahmed.jpg' }
   ];
 
   const menuItems = [
-    { label: 'اللاعبين', img: '/SideBar/side1.png' },
-    { label: 'الكشافين', img: '/SideBar/side2.png' },
-    { label: 'المدربين', img: '/SideBar/side3.png' },
-    { label: 'تواصل معنا', img: '/SideBar/side4.png' },
+    { label: 'اللاعبين', img: './SideBar/side1.png' },
+    { label: 'الكشافين', img: './SideBar/side2.png' },
+    { label: 'المدربين', img: './SideBar/side3.png' },
+    { label: 'تواصل معنا', img: './SideBar/side4.png' },
   ];
 
   return (

@@ -40,7 +40,7 @@ function Login() {
         <div className='relative'>
         <div ref={container} className='bg-[#EBFFF6] h-screen flex justify-end items-center flex-col relative overflow-hidden pb-24'>
             
-            <img src="/Logo/Logo.svg" className='logo-img object-cover w-[260px] absolute top-1/2 left-1/2'/>
+            <img src="./Logo/Logo.svg" className='logo-img object-cover w-[260px] absolute top-1/2 left-1/2'/>
 
             <div className='flex flex-col items-center'>
                 <h2 className="form-element text-2xl font-bold mb-[55px]">
