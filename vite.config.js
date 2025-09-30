@@ -12,22 +12,22 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'ProScan App',
-        short_name: 'ProScan',
-        start_url: '.',
-        display: 'standalone',
-        background_color: '#ffffff',
-        theme_color: '#4CAF50',
+        name: "Proscan",
+        short_name: "Proscan",
+        start_url: ".",
+        display: "standalone",
+        background_color: "#ffffff",
+        theme_color: "#4CAF50",
         icons: [
           {
-            src: '/proscan/icon-192.png',
-            sizes: '192x192',
-            type: 'image/png'
+            src: "pwa-192x192.png",
+            sizes: "192x192",
+            type: "image/png"
           },
           {
-            src: '/proscan/icon-512.png',
-            sizes: '512x512',
-            type: 'image/png'
+            src: "pwa-512x512.png",
+            sizes: "512x512",
+            type: "image/png"
           }
         ]
       }
