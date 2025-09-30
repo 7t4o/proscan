@@ -11,3 +11,7 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>
   </BrowserRouter>
 )
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js");
+}
