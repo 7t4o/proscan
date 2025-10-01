@@ -2,12 +2,12 @@ import { FaHeart } from "react-icons/fa";
 
 export default function Profile() {
   return (
-    <div className="min-h-screen bg-gray-200" dir="rtl">
+    <div className="min-h-screen bg-gray-200 pb-[85px]" dir="rtl">
       <div className="max-w-md mx-auto bg-gray-200 min-h-screen">
         {/* Header Section */}
         <div className="bg-white pt-8 pb-6 text-center">
           <img 
-            src="https://via.placeholder.com/120" 
+            src="/proscan/Profile/Ahmed.svg" 
             alt="Profile" 
             className="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
           />
@@ -21,7 +21,7 @@ export default function Profile() {
             اللاعبون الذي نتابعهم
           </h2>
           
-          <div className="flex gap-3 overflow-x-auto pb-2">
+          <div className="flex gap-3 overflow-x-auto scrollbar-hide pb-2">
             {/* Player Card 1 */}
             <div className="flex-shrink-0 w-40">
               <div className="bg-white rounded-lg overflow-hidden shadow-sm">

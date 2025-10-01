@@ -83,7 +83,7 @@ export default function PlayersPage() {
             </div>
 
             {/* View Details Button */}
-            <Link to="/details" className="w-full bg-[#0A2C0C] hover:bg-green-950 text-white pt-2.5 pb-2 text-xs font-semibold transition-colors">
+            <Link to="/details" className="w-full inline-block text-center bg-[#0A2C0C] hover:bg-green-950 text-white pt-2.5 pb-2 text-xs font-semibold transition-colors">
               عرض التفاصيل
             </Link>
           </div>
