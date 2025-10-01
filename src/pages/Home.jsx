@@ -142,7 +142,7 @@ export default function ProScanApp() {
             {/* Featured Players */}
             <h3 className="text-right mr-6 font-bold mb-5">اللاعبون المميزون هذا الأسبوع</h3>
             
-            <div className="flex gap-3.5 overflow-x-auto px-2.5">
+            <div className="flex gap-3.5 overflow-x-auto scrollbar-hide px-2.5">
               {players.map((player, idx) => (
                 <div key={idx} className="min-w-[144px] flex-shrink-0 bg-white rounded-xl border border-gray-200 relative shadow-sm">
                   <div className="p-3 pb-0">
