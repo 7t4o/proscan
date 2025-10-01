@@ -97,7 +97,7 @@ function Stats() {
             <div className="space-y-3 mb-6">
                 {stats.map((stat, index) => (
                     <div key={index} className="grid grid-cols-[1fr,max-content] items-center gap-x-2">
-                    <div className="h-2 bg-green-950 rounded-full overflow-hidden border border-green-700">
+                    <div className="h-2 bg-green-950 rounded-full overflow-hidden border border-[#318735]">
                         <div
                             className="h-full bg-gradient-to-l from-green-400 to-green-500 rounded-full transition-all duration-500"
                             style={{ width: `${stat.value}%` }}
