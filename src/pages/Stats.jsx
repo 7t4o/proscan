@@ -47,7 +47,7 @@ function Stats() {
                     <h2 className="text-center text-sm text-gray-300 mb-4">المهارات</h2>
                     <div className="relative w-48 h-48 mx-auto mb-4">
                         {/* Rating Circle */}
-                        <div className="absolute top-0 right-0 w-20 h-20 rounded-full border-4 border-green-400 flex items-center justify-center bg-green-900/50">
+                        <div className="absolute top-0 right-0 w-20 h-20 rounded-full border-4 border-green-500 flex items-center justify-center bg-green-900/50">
                             <span className="text-3xl font-bold">{playerData.rating}</span>
                         </div>
 
