@@ -23,21 +23,26 @@ export default function PlayersPage() {
       {/* Header */}
       <div className="bg-gray-100 px-5 pt-4 pb-5">
         {/* Search Bar */}
-        <div className="relative mb-3.5 mx-auto max-w-[280px] border-2 border-black rounded-xl bg-white py-2 px-3 flex items-center justify-between">
+        <div className="relative mb-3.5 mx-auto max-w-[280px] border-2 border-black rounded-xl bg-white px-3 flex items-center justify-between">
           <input
             type="text"
             placeholder="ابحث عن لاعبك هنا"
-            className="  text-xs text-right bg-white"
+            className="w-8/10 text-xs text-right bg-white py-2 px-3 rounded-xl outline-none"
           />
-          <CiSearch className="w-4 h-4 text-black" />
+          <CiSearch className="w-4 h-4 text-black my-2" />
         </div>
 
         {/* Add Player Button */}
         <div className="flex justify-start">
-          <button className="bg-green-800 hover:bg-green-900 text-white rounded-lg py-1 px-2 flex items-center text-xs font-semibold">
-            التصفية حسب
-            <CiFilter className="w-5 h-5 text-white" />
-          </button>
+          <select 
+            className="rounded-lg py-1 px-2 flex items-center text-xs font-semibold appearance-none bg-green-800 border border-gray-300 pl-3 pr-8 text-white focus:outline-none"
+          >
+            <option value="" selected>التصفية حسب</option>
+            <option value="governorate">المحافظة</option>
+            <option value="center">المركز</option>
+            <option value="age">العمر</option>
+            <option value="club">النادي</option>
+          </select>
         </div>
       </div>
 

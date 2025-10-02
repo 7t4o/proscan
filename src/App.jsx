@@ -6,6 +6,8 @@ import Players from "./pages/Players";
 import Notifications from "./pages/Notifications";
 import Profile from "./pages/Profile";
 import PlayerDetails from "./pages/PlayerDetails";
+import PlayerComparisonCard from './pages/PlayerComparisonCard'
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/players" element={<Players />} />
         <Route path="/details" element={<PlayerDetails />} />
+        <Route path="/comparison" element={<PlayerComparisonCard />} />
         <Route path="/notifs" element={<Notifications />} />
         <Route path="/profile" element={<Profile />} />
       </Route>

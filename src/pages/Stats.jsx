@@ -96,10 +96,10 @@ function Stats() {
             {/* Stats Bars */}
             <div className="space-y-3 mb-6">
                 {stats.map((stat, index) => (
-                    <div key={index} className="grid grid-cols-[1fr,max-content] items-center gap-x-2">
-                    <div className="h-2 bg-green-950 rounded-full overflow-hidden border border-[#318735]">
+                    <div key={index} className="flex justify-between items-center gap-x-2">
+                    <div className="h-[18px]  w-8/10 bg-green-950 rounded-full overflow-hidden border border-[#ffffff80]">
                         <div
-                            className="h-full bg-gradient-to-l from-green-400 to-green-500 rounded-full transition-all duration-500"
+                            className="h-full bg-gradient-to-l bg-[#26842A] rounded-full transition-all duration-500"
                             style={{ width: `${stat.value}%` }}
                         ></div>
                     </div>
@@ -112,44 +112,26 @@ function Stats() {
             </div>
 
             {/* Match Statistics */}
-            <div className="mb-6">
+            <div className="mb-8">
                 <h3 className="text-white text-center font-bold text-lg mb-4">عدد المباريات السابقة</h3>
 
-                <div className="grid grid-cols-2 gap-4 text-center">
-                    <div className="bg-green-950/50 rounded-lg p-3 border border-green-700">
-                        <div className="text-2xl font-bold text-white mb-1">38</div>
-                        <div className="text-sm text-gray-300">مباراة</div>
-                    </div>
-                    <div className="bg-green-950/50 rounded-lg p-3 border border-green-700">
-                        <div className="text-2xl font-bold text-white mb-1">59</div>
-                        <div className="text-sm text-gray-300">مراوغة ناجحة</div>
-                    </div>
-                    <div className="bg-green-950/50 rounded-lg p-3 border border-green-700">
-                        <div className="text-2xl font-bold text-white mb-1">146</div>
-                        <div className="text-sm text-gray-300">تسديدة</div>
-                    </div>
-                    <div className="bg-green-950/50 rounded-lg p-3 border border-green-700">
-                        <div className="text-2xl font-bold text-white mb-1">219</div>
-                        <div className="text-sm text-gray-300">تدخل ناجح</div>
-                    </div>
-                    <div className="bg-green-950/50 rounded-lg p-3 border border-green-700">
-                        <div className="text-2xl font-bold text-white mb-1">321</div>
-                        <div className="text-sm text-gray-300">تمريرة</div>
-                    </div>
-                    <div className="bg-green-950/50 rounded-lg p-3 border border-green-700">
-                        <div className="text-2xl font-bold text-white mb-1">15</div>
-                        <div className="text-sm text-gray-300">خطأ</div>
-                    </div>
+                <div className="grid grid-cols-2 p-2.5 gap-y-8  rounded-lg bg-black/30 text-right">
+                    <div className="text-2xl font-bold text-white mb-1" dir="auto">59 مراوغة ناجحة</div>
+                    <div className="text-2xl font-bold text-white mb-1" dir="auto">38 مباراة</div>
+                    <div className="text-2xl font-bold text-white mb-1" dir="auto">219 تدخل ناجح</div>
+                    <div className="text-2xl font-bold text-white mb-1" dir="auto">146 تسديدة</div>
+                    <div className="text-2xl font-bold text-white mb-1" dir="auto">15 خطأ</div>
+                    <div className="text-2xl font-bold text-white mb-1" dir="auto">321 تمريرة</div>
                 </div>
             </div>
 
             {/* Action Buttons */}
-            <div className="flex gap-3">
-                <button className="flex-1 bg-white text-black font-bold py-3 rounded-full hover:bg-gray-100 transition-colors">
-                    تحميل
-                </button>
-                <button className="flex-1 bg-white text-black font-bold py-3 rounded-full hover:bg-gray-100 transition-colors">
+            <div className=" gap-3">
+                <button className="flex-1 bg-white text-black font-bold py-1 px-[22px] rounded-full hover:bg-gray-100 transition-colors">
                     مقارنة
+                </button>
+                <button className="flex-1 bg-white text-black font-bold py-1 px-[22px] ml-5 rounded-full hover:bg-gray-100 transition-colors">
+                    تحميل
                 </button>
             </div>
         </div>
