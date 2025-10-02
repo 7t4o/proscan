@@ -26,14 +26,18 @@ export default function Profile() {
     <div className="min-h-screen bg-[#E9EDEB] pb-[85px]">
       <div className="max-w-md mx-auto min-h-screen">
         {/* Header Section */}
-        <div className=" pt-8 pb-6 text-center">
+        <div className="pt-16 pb-6 text-center">
+          <img src="/proscan/Profile/background.svg" alt="" className="z-1 absolute object-cover top-0 left-0 right-0 w-full"/>
+          <div className="relative z-10">
           <img 
             src="/proscan/Profile/Ahmed.svg" 
             alt="Profile" 
-            className="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+            className="w-28 h-28 z-20 rounded-full mx-auto mb-4 object-cover"
           />
           <h1 className="text-2xl font-bold text-gray-900 mb-1">أحمد عبدالله</h1>
           <p className="text-gray-600 text-base">كشاف - نادي الجزيرة</p>
+
+          </div>
         </div>
 
         {/* Following Players Section */}

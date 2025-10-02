@@ -7,7 +7,10 @@ const initialNotifications = [
   { "id": 3, "date": "1 يونيو", "update": "3 لاعبين جدد ضمن توصيات الأسبوع." },
   { "id": 4, "date": "27 أبريل", "update": "اللاعب خالد حكمي أضاف 3 مساهمات هجومية هذا الأسبوع." },
   { "id": 5, "date": "22 أبريل", "update": "اللاعب خالد حكمي أضاف 3 مساهمات هجومية هذا الأسبوع." },
-  { "id": 6, "date": "13 أبريل", "update": "دقة التمريرات للاعب محمد نمازي ارتفعت إلى 92%." }
+  { "id": 6, "date": "13 أبريل", "update": "دقة التمريرات للاعب محمد نمازي ارتفعت إلى 92%." },
+  { "id": 7, "date": "27 أبريل", "update": "اللاعب خالد حكمي أضاف 3 مساهمات هجومية هذا الأسبوع." },
+  { "id": 8, "date": "22 أبريل", "update": "اللاعب خالد حكمي أضاف 3 مساهمات هجومية هذا الأسبوع." },
+  { "id": 9, "date": "13 أبريل", "update": "دقة التمريرات للاعب محمد نمازي ارتفعت إلى 92%." }
 ];
 
 function Notifications() {
@@ -26,27 +29,30 @@ function Notifications() {
   };
 
   return (
-    <div className='min-h-screen max-w-md overflow-hidden mx-auto bg-[#e9edeb] px-2 pt-[76px] pb-[30px]'>
-      <div className='flex flex-col'>
+    <div className='min-h-screen max-w-md overflow-hidden mx-auto bg-[#e9edeb] pb-[30px]'>
+      <div className='bg-[#3F8743] px-7 py-3 fixed top-0 left-0 right-0'>
+        <h2 className='text-white font-bold text-2xl text-right'>الإشـعـارات</h2>
+      </div>
+      <div className='flex flex-col overflow-y-auto px-2.5 mt-16'>
         {notifs.length > 0 ? (
           notifs.map((notif) => (
             <div
               key={notif.id}
               onClick={() => handleHide(notif.id)}
               className={`
-                cursor-pointer bg-[#363636] rounded-2xl text-right 
+                cursor-pointer text-right bg-white
                 transition-all duration-500 ease-in-out        
-                overflow-hidden                          
+                overflow-hidden border shadow                  
                 ${
                   notif.hiding
                     ? 'max-h-0 opacity-0 p-0 my-0 mb-0' 
-                    : 'max-h-[85px] h-[85px] py-1.5 px-3 mb-4' 
+                    : 'max-h-[85px] h-[85px] py-3.5 px-4 mb-3' 
                 }
               `}
             >
               <div>
-                <p className='text-xs text-white/70 mb-3.5' dir='auto'>{notif.date}</p>
-                <p className='text-white' dir='auto'>{notif.update}</p>
+                <p className='text-xs text-[#A9A3A3] mb-3.5' dir='auto'>{notif.date}</p>
+                <p className='text-[#0A2C0C]' dir='auto'>{notif.update}</p>
               </div>
             </div>
           ))
