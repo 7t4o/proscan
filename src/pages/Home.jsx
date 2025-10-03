@@ -18,10 +18,10 @@ export default function ProScanApp() {
   ];
 
   const menuItems = [
-    { label: 'اللاعبين', img: `${baseUrl}SideBar/side1.png` },
-    { label: 'الكشافين', img: `${baseUrl}SideBar/side2.png` },
-    { label: 'المدربين', img: `${baseUrl}SideBar/side3.png` },
-    { label: 'تواصل معنا', img: `${baseUrl}SideBar/side4.png` },
+    { label: 'اللاعبين', img: `${baseUrl}SideBar/side1.png`, to:"/coach"},
+    { label: 'الكشافين', img: `${baseUrl}SideBar/side2.png`, to:"/Coach.jsx"},
+    { label: 'المدربين', img: `${baseUrl}SideBar/side3.png`, to:"/Coach.jsx"},
+    { label: 'تواصل معنا', img: `${baseUrl}SideBar/side4.png`, to:"/Coach.jsx"},
   ];
 
   return (
@@ -83,14 +83,15 @@ export default function ProScanApp() {
             {/* Menu Items */}
             <nav className="py-4">
               {menuItems.map((item, idx) => (
-                <button
+                <Link
+                  to={item.to}
                   key={idx}
                   className="w-full flex items-center flex-row-reverse gap-4 px-6 py-4 hover:bg-gray-50 transition-colors text-right"
                   onClick={() => setMenuOpen(false)}
                 >
                   <img src={item.img} className="w-5 h-5 text-gray-600" />
                   <span className="text-gray-800 font-medium">{item.label}</span>
-                </button>
+                </Link>
               ))}
             </nav>
 

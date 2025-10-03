@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Players from "./pages/Players";
 import Notifications from "./pages/Notifications";
 import Profile from "./pages/Profile";
+import Coach from "./pages/Coach";
+import PlayerHome from "./pages/PlayerHome";
 import PlayerDetails from "./pages/PlayerDetails";
 import PlayerComparisonCard from './pages/PlayerComparisonCard'
 
@@ -23,6 +25,8 @@ function App() {
         <Route path="/comparison" element={<PlayerComparisonCard />} />
         <Route path="/notifs" element={<Notifications />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/coach" element={<Coach />} />
+        <Route path="/playerHome" element={<PlayerHome />} />
       </Route>
     </Routes>
   );
