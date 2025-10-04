@@ -8,11 +8,11 @@ function Coach() {
     const [openTap, setOpenTap] = useState(false);
 
     return (
-        <div className='relative overflow-hidden'>
+        <div className='overflow-hidden relative'>
             <div className=" bg-[#EBFFF6] pb-[35px]">
                 <div className="max-w-md mx-auto min-h-[812px]">
                     {/* Header Section */}
-                    <div className="pt-16 pb-[42px] text-center">
+                    <div className="pt-16 pb-[42px] text-center relative">
                         <img src="/proscan/Profile/background.svg" alt="" className="z-1 absolute object-cover top-0 left-0 right-0 w-full" />
                         <div className="relative z-10">
                             <img

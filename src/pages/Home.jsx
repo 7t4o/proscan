@@ -29,8 +29,7 @@ export default function ProScanApp() {
   const menuItems = [
     { label: 'اللاعبين', img: `${baseUrl}SideBar/side1.png`, to:"/playerHome"},
     { label: 'المدربين', img: `${baseUrl}SideBar/side3.png`, to:"/coach"},
-    { label: 'الكشافين', img: `${baseUrl}SideBar/side2.png`, to:"/"},
-    { label: 'تواصل معنا', img: `${baseUrl}SideBar/side4.png`, to:"/"},
+    { label: 'الكشافين', img: `${baseUrl}SideBar/side2.png`, to:"/home"},
   ];
 
   return (
