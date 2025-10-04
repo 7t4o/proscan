@@ -24,7 +24,7 @@ export default function Profile() {
   ]
 
   return (
-    <div className="min-h-screen bg-[#E9EDEB] pb-[85px]">
+    <div className="min-h-[812px] bg-[#E9EDEB] pb-[85px]">
       <div className="max-w-md mx-auto">
         {/* Header Section */}
         <div className="pt-16 pb-6 text-center">

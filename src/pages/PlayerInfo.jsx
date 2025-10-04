@@ -31,7 +31,7 @@ export default function PlayerInfo({setOpenTap, className=""}) {
     };
 
     return (
-        <div className={`bg-[#EBFFF6] min-h-screen px-2.5 py-5 absolute top-0 ${className} z-30 transition-all duration-300 `}>
+        <div className={`bg-[#EBFFF6] min-h-[812px] px-2.5 py-5 absolute top-0 ${className} z-30 transition-all duration-300 `}>
             <div className="bg-white rounded-4xl overflow-hidden pt-[30px] pb-[52px] pr-6 pl-8" dir="rtl">
                 {/* Header */}
                 <div className="bg-white flex relative mb-4">

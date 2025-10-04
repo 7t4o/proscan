@@ -5,7 +5,7 @@ function League() {
     const baseUrl = import.meta.env.BASE_URL ?? '/';
 
   return (
-    <div className='bg-[#EBFFF6] min-h-screen pt-6 px-6'>
+    <div className='bg-[#EBFFF6] min-h-[812px] pt-6 px-6'>
         <h1 className='text-right text-[#28712C] text-[32px] font-bold' dir='auto'>
             كأس ProScan
         </h1>

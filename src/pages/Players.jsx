@@ -19,7 +19,7 @@ export default function PlayersPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 max-w-md mx-auto pb-20" dir="rtl">
+    <div className="min-h-[812px] bg-gray-50 max-w-md mx-auto pb-20" dir="rtl">
       {/* Header */}
       <div className="bg-gray-100">
         {/* Search Bar */}

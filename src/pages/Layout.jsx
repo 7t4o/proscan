@@ -10,7 +10,7 @@ function Layout() {
     const hideNav = hiddenNavRoutes.includes(location.pathname);
 
     return (
-        <div className='min-h-screen relative bg-[#EBFFF6]'>
+        <div className='min-h-[812px] relative bg-[#EBFFF6]'>
             <Outlet />
             {!hideNav && <Nav />}
         </div>

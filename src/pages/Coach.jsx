@@ -10,7 +10,7 @@ function Coach() {
     return (
         <div className='relative overflow-hidden'>
             <div className=" bg-[#EBFFF6] pb-[35px]">
-                <div className="max-w-md mx-auto min-h-screen">
+                <div className="max-w-md mx-auto min-h-[812px]">
                     {/* Header Section */}
                     <div className="pt-16 pb-[42px] text-center">
                         <img src="/proscan/Profile/background.svg" alt="" className="z-1 absolute object-cover top-0 left-0 right-0 w-full" />
@@ -65,11 +65,15 @@ function Coach() {
                         </button>
 
                         <div className='flex justify-between'>
+                            <button className='w-20 py-3 text-center rounded-[5px] shadow-md text-xs font-bold bg-white'
+                                onClick={() => alert("تم حفظ الملف بنجاح")}
+                            >حفظ</button>
+                            <button className='w-20 py-3 text-center rounded-[5px] shadow-md text-xs font-bold bg-[#D9F8FF]'
+                                for="file-upload"
+                            >إرفاق ملف</button>
                             <button className='w-20 py-3 text-center rounded-[5px] shadow-md text-xs font-bold bg-[#0A2C0C] text-white'
                                 onClick={() => setOpenTap(true)}
                             >تعديل البيانات</button>
-                            <button className='w-20 py-3 text-center rounded-[5px] shadow-md text-xs font-bold bg-[#D9F8FF]'>إرفاق ملف</button>
-                            <button className='w-20 py-3 text-center rounded-[5px] shadow-md text-xs font-bold bg-white'>حفظ</button>
                         </div>
                     </div>
                 </div>

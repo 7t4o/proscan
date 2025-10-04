@@ -27,14 +27,14 @@ export default function ProScanApp() {
   ];
 
   const menuItems = [
-    { label: 'اللاعبين', img: `${baseUrl}SideBar/side1.png`, to:"/coach"},
-    { label: 'الكشافين', img: `${baseUrl}SideBar/side2.png`, to:"/Coach.jsx"},
+    { label: 'اللاعبين', img: `${baseUrl}SideBar/side1.png`, to:"/playerHome"},
     { label: 'المدربين', img: `${baseUrl}SideBar/side3.png`, to:"/coach"},
-    { label: 'تواصل معنا', img: `${baseUrl}SideBar/side4.png`, to:"/Coach.jsx"},
+    { label: 'الكشافين', img: `${baseUrl}SideBar/side2.png`, to:"/"},
+    { label: 'تواصل معنا', img: `${baseUrl}SideBar/side4.png`, to:"/"},
   ];
 
   return (
-    <div className="min-h-screen bg-[#E9EDEB] flex justify-center">
+    <div className="min-h-[812px] bg-[#E9EDEB] flex justify-center">
       {/* Mobile Container */}
       <div className="w-full max-w-sm flex flex-col relative overflow-hidden">
         

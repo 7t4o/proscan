@@ -6,7 +6,7 @@ import { IoFitness } from "react-icons/io5";
 
 function Note() {
   return (
-    <div className='bg-[#EBFFF6] min-h-screen'>
+    <div className='bg-[#EBFFF6] min-h-[812px]'>
 
         <div className='flex gap-3.5 overflow-x-auto px-6 pt-6 mb-[30px] scrollbar-hide flex-row-reverse'>
             <button className='rounded-lg border border-[#4FA652] bg-[#4D4D4D] text-white min-w-[90px] text-center font-semibold py-2 flex justify-center items-center gap-1 cursor-pointer hover:scale-95 transition-all duration-200 '>

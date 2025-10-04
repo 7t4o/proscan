@@ -29,7 +29,7 @@ function Notifications() {
   };
 
   return (
-    <div className='min-h-screen max-w-md overflow-hidden mx-auto bg-[#e9edeb] pb-[30px]'>
+    <div className='min-h-[812px] max-w-md overflow-hidden mx-auto bg-[#e9edeb] pb-[30px]'>
       <div className='bg-[#3F8743] px-7 py-3 fixed top-0 left-0 right-0'>
         <h2 className='text-white font-bold text-2xl text-right'>الإشـعـارات</h2>
       </div>
