@@ -19,23 +19,25 @@ export default function PlayersPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 max-w-md mx-auto pb-20 pt-2" dir="rtl">
+    <div className="min-h-screen bg-gray-50 max-w-md mx-auto pb-20" dir="rtl">
       {/* Header */}
-      <div className="bg-gray-100 px-5 pt-4 pb-5">
+      <div className="bg-gray-100">
         {/* Search Bar */}
-        <div className="relative mb-3.5 mx-auto max-w-[280px] border-2 border-black rounded-xl bg-white px-3 flex items-center justify-between">
-          <input
-            type="text"
-            placeholder="ابحث عن لاعبك هنا"
-            className="w-8/10 text-xs text-right bg-white py-2 px-3 rounded-xl outline-none"
-          />
-          <CiSearch className="w-4 h-4 text-black my-2" />
+        <div className='bg-[#3F8743] w-full h-full p-4 mb-2'>
+          <div className="relative mx-auto max-w-[280px] border-2 border-black rounded-xl bg-[white] px-3 flex items-center justify-between">
+            <input
+              type="text"
+              placeholder="ابحث عن لاعبك هنا"
+              className="w-8/10 text-xs text-right bg-white py-2 px-3 rounded-xl outline-none"
+            />
+            <CiSearch className="w-4 h-4 text-black my-2" />
+          </div>
         </div>
 
         {/* Add Player Button */}
-        <div className="flex justify-start">
+        <div className="inline-block px-5 pb-5 relative">
           <select 
-            className="rounded-lg py-1 px-2 flex items-center text-xs font-semibold appearance-none bg-green-800 border border-gray-300 pl-3 pr-8 text-white focus:outline-none"
+            className="rounded-lg p-2 flex items-center text-xs font-semibold appearance-none border border-black/50 pr-3 pl-8  focus:outline-none"
           >
             <option value="" selected>التصفية حسب</option>
             <option value="governorate">المحافظة</option>
@@ -43,6 +45,7 @@ export default function PlayersPage() {
             <option value="age">العمر</option>
             <option value="club">النادي</option>
           </select>
+          <CiFilter className='absolute top-1 left-6 text-2xl'/>
         </div>
       </div>
 

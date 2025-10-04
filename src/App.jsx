@@ -9,6 +9,8 @@ import Coach from "./pages/Coach";
 import PlayerHome from "./pages/PlayerHome";
 import PlayerDetails from "./pages/PlayerDetails";
 import PlayerComparisonCard from './pages/PlayerComparisonCard'
+import Note from './pages/Note'
+import League from "./pages/League";
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/coach" element={<Coach />} />
         <Route path="/playerHome" element={<PlayerHome />} />
+        <Route path="/note" element={<Note />} />
+        <Route path="/league" element={<League />} />
       </Route>
     </Routes>
   );

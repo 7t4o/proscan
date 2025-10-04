@@ -1,16 +1,20 @@
 import React from 'react'
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Nav from '../components/Nav';
 
-
 function Layout() {
+    const location = useLocation();
+
+    const hiddenNavRoutes = ["/coach", "/details"];
+
+    const hideNav = hiddenNavRoutes.includes(location.pathname);
+
     return (
         <div className='min-h-screen relative bg-[#EBFFF6]'>
             <Outlet />
-
-            <Nav />
+            {!hideNav && <Nav />}
         </div>
     )
 }
 
-export default Layout
+export default Layout;

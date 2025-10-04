@@ -115,13 +115,13 @@ function Stats() {
             <div className="mb-8">
                 <h3 className="text-white text-center font-bold text-lg mb-4">عدد المباريات السابقة</h3>
 
-                <div className="grid grid-cols-2 p-2.5 gap-y-8  rounded-lg bg-black/30 text-right">
-                    <div className="text-2xl font-bold text-white mb-1" dir="auto">59 مراوغة ناجحة</div>
-                    <div className="text-2xl font-bold text-white mb-1" dir="auto">38 مباراة</div>
-                    <div className="text-2xl font-bold text-white mb-1" dir="auto">219 تدخل ناجح</div>
-                    <div className="text-2xl font-bold text-white mb-1" dir="auto">146 تسديدة</div>
-                    <div className="text-2xl font-bold text-white mb-1" dir="auto">15 خطأ</div>
-                    <div className="text-2xl font-bold text-white mb-1" dir="auto">321 تمريرة</div>
+                <div className="grid grid-cols-2 p-2.5 gap-y-6  rounded-lg bg-black/30 text-right">
+                    <div className="font-bold text-white mb-1" dir="auto">59 مراوغة ناجحة</div>
+                    <div className="font-bold text-white mb-1" dir="auto">38 مباراة</div>
+                    <div className="font-bold text-white mb-1" dir="auto">219 تدخل ناجح</div>
+                    <div className="font-bold text-white mb-1" dir="auto">146 تسديدة</div>
+                    <div className="font-bold text-white mb-1" dir="auto">15 خطأ</div>
+                    <div className="font-bold text-white mb-1" dir="auto">321 تمريرة</div>
                 </div>
             </div>
 

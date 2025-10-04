@@ -8,7 +8,7 @@ const PlayerProfileApp = () => {
     const [activeTab, setActiveTab] = useState('overview');
 
     return (    
-        <div className="max-w-md mx-auto relative pb-[90px] bg-[linear-gradient(171deg,#2E7D32_42.06%,#000_83.43%)] p-[18px]">
+        <div className="max-w-md mx-auto relative min-h-screen bg-[linear-gradient(171deg,#2E7D32_42.06%,#000_83.43%)] p-[18px]">
             {/* Tabs */}
             <div className="flex gap-2 mb-6 bg-[#123214BF] max-w-[275px] mx-auto rounded-lg p-[1px] text-[#FFFFFF80]">
                 <button

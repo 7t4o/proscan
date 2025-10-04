@@ -46,7 +46,7 @@ function Notifications() {
                 ${
                   notif.hiding
                     ? 'max-h-0 opacity-0 p-0 my-0 mb-0' 
-                    : 'max-h-[85px] h-[85px] py-3.5 px-4 mb-3' 
+                    : 'max-h-[100px] py-3.5 px-4 mb-3' 
                 }
               `}
             >

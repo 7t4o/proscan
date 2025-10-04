@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaHeart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Profile() {
     const [liked, setLiked] = useState([false, false]);
@@ -24,7 +25,7 @@ export default function Profile() {
 
   return (
     <div className="min-h-screen bg-[#E9EDEB] pb-[85px]">
-      <div className="max-w-md mx-auto min-h-screen">
+      <div className="max-w-md mx-auto">
         {/* Header Section */}
         <div className="pt-16 pb-6 text-center">
           <img src="/proscan/Profile/background.svg" alt="" className="z-1 absolute object-cover top-0 left-0 right-0 w-full"/>
@@ -41,8 +42,8 @@ export default function Profile() {
         </div>
 
         {/* Following Players Section */}
-        <div className="px-4 py-6">
-          <h2 className="text-xl font-bold text-gray-900 mb-8 text-right">
+        <div className="px-4 py-1">
+          <h2 className="text-xl font-bold text-gray-900 mb-[17px] text-right">
             اللاعبون الذي تتابعهم
           </h2>
           
@@ -64,7 +65,7 @@ export default function Profile() {
                       }}
                       className="absolute top-0 left-[11px] w-[17px] h-[17px] rounded-full flex items-center justify-center">
                       <FaHeart 
-                        className={`w-5 h-5 ${liked[idx] ? 'fill-red-500 text-red-500' : 'text-gray-400'}`}
+                        className={`w-5 h-5 fill-red-500 text-red-500`}
                         />
                     </button>
                   </div>
@@ -79,39 +80,45 @@ export default function Profile() {
         </div>
 
         {/* Upcoming Matches Section */}
-        <div className="px-4 py-1">
-          <h2 className="text-xl font-bold text-gray-900 mb-4 text-right">
+        <div className="px-4">
+          <h2 className="text-xl font-bold text-gray-900 mb-5 text-right">
             الرحلات القادمة
           </h2>
           
           <div className="flex gap-5 overflow-x-auto pb-2 scrollbar-hide text-right">
             {/* Match Card 1 */}
             <div className="flex-shrink-0 w-[115px]">
-              <div className="bg-black/30 rounded-lg py-2 px-3 text-white flex flex-col justify-center">
-                <p className="text-xs mb-3 font-bold">مباراة استكشاف</p>
+              <div className="bg-[#28712C4D] rounded-lg py-2 px-3 flex flex-col justify-center">
+                <p className="text-xs mb-3 font-bold text-[#28712C]">مباراة استكشاف</p>
                 <p className="text-xs mb-3 font-bold">جازان</p>
-                <p className="text-[8px] opacity-50 font-bold">10 مايو 2025</p>
+                <p className="text-[8px] opacity-50 font-bold text-[#24262480]">10 مايو 2025</p>
               </div>
             </div>
 
             {/* Match Card 2 */}
             <div className="flex-shrink-0 w-32">
-              <div className="bg-black/30 rounded-lg py-2 px-3 text-white flex flex-col justify-center">
-                <p className="text-xs mb-3 font-bold">تجربة مواهب</p>
+              <div className="bg-[#28712C4D] rounded-lg py-2 px-3 text-white flex flex-col justify-center">
+                <p className="text-xs mb-3 font-bold text-[#28712C]">تجربة مواهب</p>
                 <p className="text-xs mb-3 font-bold">صبيا</p>
-                <p className="text-[8px] opacity-50 font-bold">12 مايو 2025</p>
+                <p className="text-[8px] opacity-50 font-bold text-[#24262480]">12 مايو 2025</p>
               </div>
             </div>
 
             {/* Match Card 3 */}
             <div className="flex-shrink-0 w-32">
-              <div className="bg-black/30 rounded-lg py-2 px-3 text-white flex flex-col justify-center">
-                <p className="text-xs mb-3 font-bold">مباراة استكشاف</p>
+              <div className="bg-[#28712C4D] rounded-lg py-2 px-3 text-white flex flex-col justify-center">
+                <p className="text-xs mb-3 font-bold text-[#28712C]">مباراة استكشاف</p>
                 <p className="text-xs mb-3 font-bold">أبو عريش</p>
-                <p className="text-[8px] opacity-50 font-bold">15 مايو 2025</p>
+                <p className="text-[8px] opacity-50 font-bold text-[#24262480]">15 مايو 2025</p>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="flex justify-center">
+          <Link to='/note' className="inline-block text-center text-[22px] mt-[30px] text-white font-bold py-5 px-16 rounded-2xl mx-auto bg-[#2E7D32]">
+            إضـافـة مـلاحـظـة
+          </Link>
         </div>
       </div>
     </div>
