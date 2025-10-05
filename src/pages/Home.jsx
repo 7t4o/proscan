@@ -44,7 +44,7 @@ export default function ProScanApp() {
               <CiSearch className="w-7 h-7 text-white" />
             </button>
             <div className="flex items-center gap-1.5">
-              <img src={`${baseUrl}Logo/Logo-White.svg`} alt="" />
+              <img loading="lazy" src={`${baseUrl}Logo/Logo-White.svg`} alt="" />
             </div>
             <button onClick={() => setMenuOpen(!menuOpen)}>
               <IoIosMenu className="w-6 h-6 text-white" />
@@ -69,7 +69,7 @@ export default function ProScanApp() {
             <div className="bg-[#318735] px-5 py-6">
               <div className="flex items-center justify-between mb-3 flex-row-reverse">
                 <div className="flex items-center gap-2">
-                  <img src={`${baseUrl}Logo/Logo-White.svg`} alt="" />
+                  <img loading="lazy" src={`${baseUrl}Logo/Logo-White.svg`} alt="" />
                 </div>
                 <button onClick={() => setMenuOpen(false)}>
                   <AiOutlineClose className="w-6 h-6 text-white" />
@@ -97,7 +97,7 @@ export default function ProScanApp() {
                   className="w-full flex items-center flex-row-reverse gap-4 px-6 py-4 hover:bg-gray-50 transition-colors text-right"
                   onClick={() => setMenuOpen(false)}
                 >
-                  <img src={item.img} className="w-5 h-5 text-gray-600" />
+                  <img loading="lazy" src={item.img} className="w-5 h-5 text-gray-600" />
                   <span className="text-gray-800 font-medium">{item.label}</span>
                 </Link>
               ))}
@@ -117,6 +117,7 @@ export default function ProScanApp() {
           {/* Hero Section */}
           <div className="relative h-44">
             <img 
+              loading="lazy"
               src={`${baseUrl}Home/Hero.jpg`}
               alt="Stadium"
               className="w-full h-full object-cover brightness-75"
@@ -159,6 +160,7 @@ export default function ProScanApp() {
                     </button>
                     <div className="w-20 rounded-sm mx-auto">
                       <img 
+                        loading="lazy"
                         src={player.image}
                         alt={player.name}
                         className="w-full max-w-[144px] h-[84px] object-cover rounded-lg"
@@ -180,12 +182,12 @@ export default function ProScanApp() {
                 <div key={idx} className="min-w-[144px] flex-shrink-0 rounded-lg bg-white border border-gray-200 relative shadow-md shadow-black/25">
                   <div className="flex items-center">
                     <div className="">
-                      <img src={player.img1} alt="" className="h-[60px] w-[60px] object-cover"/>
+                      <img loading="lazy" src={player.img1} alt="" className="h-[60px] w-[60px] object-cover"/>
                       <h4 className="text-[10px] font-bold text-center">{player.club1}</h4>
                     </div>
                     <p className="font-bold">َضد</p>
                     <div className="">
-                      <img src={player.img2} alt="" className="h-[60px] w-[60px] object-cover"/>
+                      <img loading="lazy" src={player.img2} alt="" className="h-[60px] w-[60px] object-cover"/>
                       <h4 className="text-[10px] font-bold text-center">{player.club2}</h4>
                     </div>
                   </div>
