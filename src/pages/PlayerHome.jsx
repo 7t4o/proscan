@@ -42,7 +42,7 @@ function PlayerHome() {
           <div className='z-10 w-full'>
             <h3 className='font-bold mr-[26px] mt-2 text-right text-white/90'>هدافين النخبة</h3>
             <div className='flex-col flex gap-1.5'>
-              <div className='flex justify-between text-white text-sm font-bold px-2 mt-4'>
+              <div className='flex justify-between text-white text-sm font-bold px-2 mt-3'>
                 <p>15</p>
                 <p>نادي الصقور</p>
                 <p>موسى حمدي</p>
